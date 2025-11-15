@@ -9,12 +9,12 @@ export default function Navbar() {
           style={{ fontFamily: "cursive" }}
         >
           <h1 className="flex items-center gap-2">
-            <FaCode className="text-blue-500"/> Inowei
+            <FaCode className="text-blue-500 hover:animate-spin cursor-pointer"/> Inowei
           </h1>
         </div>
         <ul className="flex space-x-4 items-center sm:flex-row flex-col sm:gap-0 gap-4 sm:justify-end justify-center sm:text-base text-sm ">
           <li>
-            <a href="#navbar" className="hover:text-blue-500 transition-colors duration-300">Home</a>
+            <a href="#hero" className="hover:text-blue-500 transition-colors duration-300">Home</a>
           </li>
           <li>
             <a href="#about" className="hover:text-blue-500 transition-colors duration-300">About</a>

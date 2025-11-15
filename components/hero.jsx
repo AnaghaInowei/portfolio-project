@@ -31,10 +31,10 @@ export default function Hero() {
       <div className=" mt-10 md:mt-0 mx-0  max-w-50 max-h-50 md:max-w-100 md:max-h-100  rounded-full transition-all duration-300 animate-slide-in-right">
         <img src={profileImage} alt="Inowei" className=" rounded-full shadow-lg object-cover w-50 h-50 md:w-100 md:h-100 border-2 border-blue-500" />
       </div>
-      {/* <div className="flex flex-col gap-2 justify-center items-center md:absolute  bottom-2 left-1/2 transform -translate-x-1/2  transition-all duration-300">
+      <div className="flex flex-col gap-2 justify-center items-center md:absolute  bottom-2 left-1/2 transform -translate-x-1/2  transition-all duration-300">
       <p className="text-gray-600 transition-all duration-300 animate-slide-in-left">Scroll down</p>
         <FaArrowDown className="text-blue-500 text-2xl animate-bounce" />
-      </div> */}
+      </div>
       </div>
     </section>
   );
