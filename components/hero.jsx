@@ -5,8 +5,8 @@ import { FaArrowDown } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section id="hero" className="h-screen">
-        <div className="h-full flex flex-col md:flex-row items-center py-10 px-6 md:gap-10 gap-0 md:justify-between justify-center bg-gray-100">
+    <section id="hero" className="md:h-screen">
+        <div className="md:h-full mx-auto flex flex-col md:flex-row items-center py-10 px-6 md:gap-10 gap-0 md:justify-between justify-center bg-gray-100">
         {/* Hero Content */}
       <div className=" text-left max-w-2xl animate-fade-in">
         <h1 className="text-5xl font-bold transition-all duration-300 animate-slide-in-left">Hi, <span className="text-blue-500" style={{ fontFamily: "cursive" }}>I'm Inowei</span></h1>
@@ -28,13 +28,13 @@ export default function Hero() {
 
       {/* Profile Image */}
       </div>
-      <div className=" md:mx-auto mt-10 md:mt-0 mx-0  max-w-50 max-h-50 md:max-w-100 md:max-h-100  rounded-full transition-all duration-300 animate-slide-in-right">
+      <div className=" mt-10 md:mt-0 mx-0  max-w-50 max-h-50 md:max-w-100 md:max-h-100  rounded-full transition-all duration-300 animate-slide-in-right">
         <img src={profileImage} alt="Inowei" className=" rounded-full shadow-lg object-cover w-50 h-50 md:w-100 md:h-100 border-2 border-blue-500" />
       </div>
-      <div className="flex flex-col gap-2 justify-center items-center absolute bottom-2 left-1/2 transform -translate-x-1/2  transition-all duration-300">
+      {/* <div className="flex flex-col gap-2 justify-center items-center md:absolute  bottom-2 left-1/2 transform -translate-x-1/2  transition-all duration-300">
       <p className="text-gray-600 transition-all duration-300 animate-slide-in-left">Scroll down</p>
         <FaArrowDown className="text-blue-500 text-2xl animate-bounce" />
-      </div>
+      </div> */}
       </div>
     </section>
   );
