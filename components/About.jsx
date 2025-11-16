@@ -1,13 +1,9 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
+import React from 'react';
+import { FaHtml5, FaCss3, FaReact, FaBootstrap } from "react-icons/fa";
+import { IoLogoJavascript, IoCode } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa6";
-import { FaNpm } from "react-icons/fa6";
+import { FaFigma, FaNpm } from "react-icons/fa6";
 import { SiVite } from "react-icons/si";
-import { IoCode } from "react-icons/io5";
 import { TbTableColumn } from "react-icons/tb";
 import { IoIosGlobe } from "react-icons/io";
 import { LuBrain } from "react-icons/lu";
@@ -26,16 +22,16 @@ export default function About() {
                     {/* about me */}
                     <div className="text-left md:w-1/2">
                         <h2 className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>My Story</h2>
-                        <p>I'm <span className="text-blue-500" style={{ fontFamily: "cursive" }} >Inowei David Anagha,</span> a frontend developer wwith 2  years of experience building web applications.
+                        <p>I'm <span className="text-blue-700 text-2xl" style={{ fontFamily: "cursive" }} >Inowei David Anagha,</span> a frontend developer with 2  years of experience building web applications.
                             I decided to go into tech cause of a recommendation since then I've a passion for design and problem-solving. 
 
                             I'm constantly learning and adapting to new technologies and methodologies to ensure that I'm delivering the best possible solutions for my clients and users.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            <p className="flex  items-center gap-2"><IoCode className="text-blue-700"/> Clean Code</p>
-                            <p className="flex  items-center gap-2"><TbTableColumn className="text-blue-700"/>Responsive Design</p>
-                            <p className="flex  items-center gap-2"><IoIosGlobe className="text-blue-700"/>Web Performance</p>
-                            <p className="flex  items-center gap-2"><LuBrain className="text-blue-700"/>Problem Solver</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2">
+                            <p className="flex  items-center gap-2"><IoCode className="text-blue-700 text-2xl hover:animate-spin"/> Clean Code</p>
+                            <p className="flex  items-center gap-2"><TbTableColumn className="text-blue-700 text-2xl hover:animate-ping"/>Responsive Design</p>
+                            <p className="flex  items-center gap-2"><IoIosGlobe className="text-blue-700 text-2xl hover:animate-bounce"/>Web Performance</p>
+                            <p className="flex  items-center gap-2"><LuBrain className="text-blue-700 text-2xl hover:animate-pulse"/>Problem Solver</p>
                         </div>
                     
                     </div>
@@ -59,7 +55,7 @@ export default function About() {
                             <div className="flex flex-col justify-center items-end gap-2">
                                 <h2 className="text-2xl text-blue-500 mb-5 " style={{ fontFamily: "cursive" }}>Frameworks/Libraries</h2>
                                 <div className="flex justify-center items-end gap-5">
-                                    <p className="flex justify-center items-center gap-2"><FaReact className="text-blue-500" /> React</p>
+                                    <p className="flex justify-center items-center gap-2"><FaReact className="text-blue-500 animate-spin" /> React</p>
                                     <p className="flex justify-center items-center gap-2"><RiTailwindCssFill className="text-blue-500"/>Tailwind CSS</p>
                                      <p className="flex justify-center items-center gap-2"><FaBootstrap className="text-purple-500"/> Bootstrap</p>
                                 </div>

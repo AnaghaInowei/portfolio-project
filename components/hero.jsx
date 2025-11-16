@@ -1,3 +1,4 @@
+import React from 'react';
 import profileImage from '../src/assets/inowei.png'
 import { FaLinkedin, FaGithub} from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
@@ -16,8 +17,8 @@ export default function Hero() {
         {/* Social Links */}
         <div className="flex flex-row gap-4 items-center mt-4 md:mt-0 py-5 transition-all duration-300 animate-slide-in-left">
           <a href="https://www.linkedin.com/in/david-anagha " className=" text-3xl text-blue-500 hover:text-blue-600 transition-colors duration-300"><FaLinkedin /></a>
-          <a href="https://www.github.com/AnaghaInowei" className=" text-3xl text-black hover:text-blue-600 transition-colors duration-300"><FaGithub /></a>
-          <a href="https://www.x.com/InoweiAnagha" className=" text-3xl text-black hover:text-blue-600 transition-colors duration-300"><FaXTwitter /></a>
+          <a href="https://www.github.com/AnaghaInowei" className=" text-3xl text-black  transition-colors duration-300"><FaGithub /></a>
+          <a href="https://www.x.com/InoweiAnagha" className=" text-3xl text-black  transition-colors duration-300"><FaXTwitter /></a>
         </div>
 
         {/* Buttons */}
