@@ -10,12 +10,12 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <section className="bg-gray-900 text-gray-100 grid grid-cols-1 md:grid-cols-3  justify-between px-3 py-6  gap-3">
-      <div>
+    <section className="bg-gray-900 text-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-3  justify-between px-3 py-6  gap-3">
         {/* Quick Links */}
         <div>
           <h2 className="flex items-center gap-2">
-            <FaCode className="text-blue-500 hover:animate-spin cursor-pointer" />{" "}
+            <FaCode className="text-blue-500 hover:animate-spin cursor-pointer" />
             Inowei
           </h2>
           <p>
