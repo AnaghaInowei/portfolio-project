@@ -1,6 +1,6 @@
 import React from 'react'
-import udemelity from '../src/assets/udemelity.png'
-import RentDirect from '../src/assets/rent-direct.png'
+import udemelity from '../assets/udemelity.png'
+import RentDirect from '../assets/rent-direct.png'
 import { FaExternalLinkAlt, FaGithub} from 'react-icons/fa'
 
 
@@ -36,9 +36,9 @@ const projects = [
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
               {projects.map(project => (
-                <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div key={project.id} className="bg-white border hover:-translate-2.5 transition-all hover:shadow-blue-100  border-blue-500 rounded-lg shadow-lg overflow-hidden hover:shadow-xl duration-300">
                   <div className="relative group">
                     <img 
                       src={project.image} 

@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa6";
+import { FaCode, FaWhatsapp } from "react-icons/fa6";
 
 export default function Navbar() {
   return (
@@ -25,8 +25,9 @@ export default function Navbar() {
           <li>
             <a href="#services" className="hover:text-blue-500 transition-colors duration-300">Services</a>
           </li>
-          <li>
-            <a href="#contact" className="hover:text-blue-500 transition-colors duration-300">Contact</a>
+          <li className="px-2 py-4 text-blue-500 border border-blue-500 rounded-2xl hover:bg-blue-500 hover:text-white transition-colors duration-300">
+            <a href="https://wa.me/2349168301327?text=Hello,%20I%20am%20interested%20in%20your%20services
+" className="flex justify-center items-center gap-2" target="_blank"><FaWhatsapp className="text-xl"/>Contact Me</a>
           </li>
         </ul>
       </nav>

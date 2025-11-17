@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../src/assets/inowei.png'
+import profileImage from '../assets/inowei.png'
 import { FaLinkedin, FaGithub} from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
