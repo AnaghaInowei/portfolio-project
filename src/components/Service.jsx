@@ -38,8 +38,8 @@ export default function ServiceSection() {
             {/* service iteration */}
             <div className="flex flex-col md:flex-row justify-center items-center  gap-5">
                 {services.map(service => (
-                    <div key={service.id} className="flex flex-col gap-3 items-start text-left bg-gray-50 border rounded-2xl border-blue-500 px-5 py-3 shadow-xl hover:shadow-blue-200 hover:-translate-2.5 transition-all duration-300">
-                        <div className="bg-blue-700 text-white p-4 rounded-2xl hover:animate-spin">
+                    <div key={service.id} className="flex flex-col gap-3 items-start text-left bg-gray-50 border rounded-2xl border-blue-500 px-6 py-4 shadow-xl hover:shadow-blue-200 hover:-translate-2.5 transition-all duration-300">
+                        <div className="bg-blue-700 text-white p-4 rounded-2xl animate-bounce">
                             {service.image}
                         </div>
                         <h4 className="text-2xl text-blue-500 font-bold" style={{ fontFamily: "cursive" }}>{service.title}</h4>

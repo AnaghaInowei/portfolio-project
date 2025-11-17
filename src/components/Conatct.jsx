@@ -1,6 +1,7 @@
 import { FaLocationDot, FaPhone, FaXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { FaLinkedin } from 'react-icons/fa'
+import { FiSend } from "react-icons/fi";
 
 export default function Contact() {
 
@@ -27,17 +28,17 @@ export default function Contact() {
 
 
     return (
-        <section  className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6">
+        <section id="contact"  className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6">
             <div className="max-w-2xl">
                 <h3 className="font-bold text-blue-500 text-2xl mb-4 " style={{ fontFamily: "cursive" }}>Conatct Me</h3>
                 <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'm always open to discussing new projects and opportunities.</p>
             </div>
 
-            {/* contact section 🥱🥱 */}
+            {/* contact card section 🥱🥱 */}
             <div className=" flex flex-col md:flex-row w-full gap-5">
                     <div className="flex flex-col  gap-5">
                         {touch.map(touched => (
-                            <div key={touched.id} className="flex flex-col gap-3 items-start text-left bg-gray-50 border rounded-xl border-blue-500 px-5 py-2 shadow-xl hover:shadow-blue-200 hover:-translate-2.5 transition-all duration-300">
+                            <div key={touched.id} className="flex flex-col gap-3 items-start text-left bg-gray-50 border rounded-xl border-blue-500 px-5 py-2 shadow-xl text-gray-700 hover:shadow-blue-200 hover:-translate-2.5 transition-all duration-300">
                             <div className="bg-blue-200 text-blue-500 p-4 rounded-xl">
                                 {touched.image}
                             </div>
@@ -55,24 +56,39 @@ export default function Contact() {
                         </div>
                     </div>
 
+                        {/* contacts section 🥱🥱 */}
                     <div className="flex flex-col justify-between w-full   items-center">
                         <h3 className="font-bold text-xl text-blue-500" style={{ fontFamily: "cursive" }}>Send me a message</h3>
                         <div className="flex flex-col gap-2 justify-start w-full items-start ">
+
+                            {/* label for name */}
                             <label htmlFor="yourname" className="items-start text-xl text-blue-500" style={{ fontFamily: "cursive" }}>Your Name</label>
-                            <input type="text" name="yourname" id="yourname" placeholder="John Doe" className="border border-blue-200 rounded-2xl h-10 px-3 py-5   w-full" style={{ fontFamily: "cursive" }}/>
+                            <input type="text" name="yourname" id="yourname" placeholder="John Doe" className="border border-blue-200 rounded-2xl h-10 px-3 py-5 invalid:border-rose-500 invalid:text-rose-600 focus:border-blue-700 focus:outline focus:outline-blue-700 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full" style={{ fontFamily: "cursive" }}/>
                         </div>
+
+                        {/* label for email */}
                         <div className="flex flex-col gap-2 justify-start w-full items-start ">
                             <label htmlFor="email"className="text-xl text-blue-500" style={{ fontFamily: "cursive" }}>Email</label>
-                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" className="border border-blue-200   w-full rounded-2xl h-10 px-3 py-5" style={{ fontFamily: "cursive" }}/>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" className="border border-blue-200   w-full rounded-2xl h-10 px-3 py-5 invalid:border-rose-500 invalid:text-rose-600 focus:border-blue-700 focus:outline focus:outline-blue-700 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300" style={{ fontFamily: "cursive" }}/>
                         </div>
+
+                        {/* label for subject */}
                         <div className="flex flex-col gap-2 justify-start w-full items-start ">
                             <label htmlFor="subject" className="text-xl text-blue-500" style={{ fontFamily: "cursive" }}>Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="Project Inquiry" className="border border-blue-200   w-full rounded-2xl h-10 px-3 py-5" style={{ fontFamily: "cursive" }}/>
+                            <input type="text" name="subject" id="subject" placeholder="Project Inquiry" className="border border-blue-200   w-full rounded-2xl h-10 px-3 py-5 invalid:border-rose-500 invalid:text-rose-600 focus:border-blue-700 focus:outline focus:outline-blue-700 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300" style={{ fontFamily: "cursive" }}/>
                         </div>
+
+                        {/* label for message */}
                         <div className="flex flex-col gap-2 justify-start w-full items-start ">
                             <label htmlFor="message" className="text-xl text-blue-500" style={{ fontFamily: "cursive" }}>Message</label>
-                            <textarea name="message" id="message" placeholder="Hello, I'd like to talk about..." className="border border-blue-200   w-full rounded-2xl h-40 px-3 py-5" style={{ fontFamily: "cursive" }}></textarea>
+                            <textarea name="message" id="message" placeholder="Hello, I'd like to talk about..." className="border border-blue-200   w-full rounded-2xl h-40 px-3 py-5 invalid:border-rose-500 invalid:text-rose-600 focus:border-blue-700 focus:outline focus:outline-blue-700 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300" style={{ fontFamily: "cursive" }}></textarea>
                         </div>
+                        
+                        {/* submit btn */}
+                        <div className="flex justify-start items-center text-left w-full">
+                            <button type="submit" className="flex justify-center items-center bg-blue-600 rounded-2xl shadow-xl hover:shadow-blue-500 hover:-translate-1.5 hover:bg-blue-700 transition-all duration-300 text-white gap-3 px-6 py-2"><FiSend/> Submit</button>
+                        </div>
+                        
                     </div>
 
                     
