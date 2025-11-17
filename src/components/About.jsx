@@ -22,7 +22,7 @@ export default function About() {
                     {/* about me */}
                     <div className="text-left md:w-1/2">
                         <h2 className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>My Story</h2>
-                        <p>I'm <span className="text-blue-700 text-2xl" style={{ fontFamily: "cursive" }} >Inowei David Anagha,</span> a frontend developer with 2  years of experience building web applications.
+                        <p>I'm <span className="text-blue-700 text-2xl" style={{ fontFamily: "cursive" }} >Inowei David Anagha,</span> a frontend developer with 1 year of experience building web applications.
                             I decided to go into tech cause of a recommendation since then I've a passion for design and problem-solving. 
 
                             I'm constantly learning and adapting to new technologies and methodologies to ensure that I'm delivering the best possible solutions for my clients and users.

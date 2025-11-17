@@ -27,7 +27,7 @@ export default function Contact() {
 
 
     return (
-        <section  className="flex flex-col justify-center gap-6 items-center text-center px-4 py-6">
+        <section  className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6">
             <div className="max-w-2xl">
                 <h3 className="font-bold text-blue-500 text-2xl mb-4 " style={{ fontFamily: "cursive" }}>Conatct Me</h3>
                 <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'm always open to discussing new projects and opportunities.</p>
