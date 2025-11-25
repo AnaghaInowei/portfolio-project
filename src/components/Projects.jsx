@@ -27,11 +27,11 @@ const projects = [
 ];
 
     return (
-        <section id="projects" className="flex flex-col justify-center items-center bg-gray-50 text-center px-4 py-6">
+        <section id="projects" className="flex flex-col justify-center items-center bg-gray-50 text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}>
           <div className="w-full max-w-7xl mx-auto">
             <div className="mb-8">
-              <h2 className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>My Projects</h2>
-              <p className="text-gray-600" style={{ fontFamily: "cursive" }}>
+              <h2 className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>My Projects</h2>
+              <p className="text-gray-600" style={{fontFamily: "Libre Baskerville"}}>
                 Here are some of my recent projects that showcase my skills and experience
               </p>
             </div>
@@ -48,7 +48,7 @@ const projects = [
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-blue-500 mb-3" style={{ fontFamily: "cursive" }}>{project.title}</h3>
+                    <h3 className="text-2xl font-bold text-blue-500 mb-3" style={{fontFamily: "Libre Baskerville"}}>{project.title}</h3>
                     <p className="text-gray-600 mb-4">{project.description}</p>
                     
                     <div className="flex flex-wrap gap-2">

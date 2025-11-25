@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCode, FaWhatsapp } from "react-icons/fa6";
+import { DarkModeToggle } from './DarkModeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,11 +59,11 @@ export default function Navbar() {
   );
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200 mx-auto">
+    <header className="sticky top-0 left-0 right-0 z-50 bg-white dark:bg-black shadow-md border-b border-gray-200 dark:border-gray-500 mx-auto" style={{fontFamily: "Merriweather Sans"}}>
       <nav className="flex justify-between items-center px-6 py-4">
         <div
           className="text-2xl font-bold items-center"
-          style={{ fontFamily: "cursive" }}
+          
         >
           <h1 className="flex items-center gap-2">
             <FaCode className="text-blue-500 hover:animate-spin cursor-pointer" />{" "}
@@ -104,6 +105,8 @@ export default function Navbar() {
           {navLinks}
         </ul>
       </div>
+
+      <DarkModeToggle />
     </header>
   );
 }

@@ -6,13 +6,13 @@ import { FaArrowDown } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section id="hero" className="md:h-screen">
+    <section id="hero" className="md:h-screen" style={{fontFamily: "Merriweather Sans"}}>
         <div className="md:h-full mx-auto flex flex-col md:flex-row items-center py-10 px-6 md:gap-10 gap-0 md:justify-between justify-center bg-gray-100">
         {/* Hero Content */}
       <div className=" text-left max-w-2xl animate-fade-in">
-        <h1 className="text-5xl font-bold transition-all duration-300 animate-slide-in-left">Hi, <span className="text-blue-500" style={{ fontFamily: "cursive" }}>I'm Inowei</span></h1>
-        <h2 className="text-3xl font-bold transition-all duration-300 animate-slide-in-left">A Frontend Developer</h2>
-        <p className="text-lg text-gray-600 transition-all duration-300 animate-slide-in-left">I build exceptional and accessible digital experiences for the web. Focused on creating responsive, user-friendly interfaces.</p>
+        <h1 className="text-5xl font-bold transition-all duration-300 animate-slide-in-left">Hi, <span className="text-blue-500" style={{ fontFamily: "Libre Baskerville" }}>I'm Inowei</span></h1>
+        <h2 className="text-3xl font-bold transition-all duration-300 animate-slide-in-left" style={{fontFamily: "Merriweather Sans"}}>A Frontend Developer</h2>
+        <p className="text-lg text-gray-600 transition-all duration-300 animate-slide-in-left" style={{fontFamily: "Merriweather Sans"}}>I build exceptional and accessible digital experiences for the web. Focused on creating responsive, user-friendly interfaces.</p>
 
         {/* Social Links */}
         <div className="flex flex-row gap-4 items-center mt-4 md:mt-0 py-5 transition-all duration-300 animate-slide-in-left">

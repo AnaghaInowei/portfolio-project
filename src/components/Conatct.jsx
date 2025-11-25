@@ -48,12 +48,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6"
+      className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}
     >
       <div className="max-w-2xl">
         <h3
           className="font-bold text-blue-500 text-2xl mb-4 "
-          style={{ fontFamily: "cursive" }}
+          style={{fontFamily: "Merriweather Sans"}}
         >
           Conatct Me
         </h3>
@@ -77,7 +77,7 @@ export default function Contact() {
               </div>
               <h4
                 className="text-xl text-blue-500"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
               >
                 {touched.title}
               </h4>
@@ -88,7 +88,7 @@ export default function Contact() {
           <div className="flex flex-col gap-6 justify-center items-start px-6 py-2 border rounded-2xl shadow-xl hover:shadow-blue-400 transition-all duration-300  border-blue-500">
             <h2
               className="font-bold text-xl text-blue-500"
-              style={{ fontFamily: "cursive" }}
+              style={{fontFamily: "Merriweather Sans"}}
             >
               Follow me
             </h2>
@@ -113,7 +113,7 @@ export default function Contact() {
         <div className="flex flex-col justify-between w-full   items-center">
           <h3
             className="font-bold text-xl text-blue-500"
-            style={{ fontFamily: "cursive" }}
+            style={{fontFamily: "Merriweather Sans"}}
           >
             Send me a message
           </h3>
@@ -129,7 +129,7 @@ export default function Contact() {
               <label
                 htmlFor="yourname"
                 className="items-start text-xl text-blue-500"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
               >
                 Your Name
               </label>
@@ -139,7 +139,7 @@ export default function Contact() {
                 id="yourname"
                 placeholder="John Doe"
                 className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
                 required
               />
             
@@ -149,7 +149,7 @@ export default function Contact() {
               <label
                 htmlFor="email"
                 className="text-xl text-blue-500"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
               >
                 Email
               </label>
@@ -159,7 +159,7 @@ export default function Contact() {
                 id="email"
                 placeholder="johndoe@gmail.com"
                 className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
                 required
               />
             
@@ -169,7 +169,7 @@ export default function Contact() {
               <label
                 htmlFor="subject"
                 className="text-xl text-blue-500"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
               >
                 Subject
               </label>
@@ -179,7 +179,7 @@ export default function Contact() {
                 id="subject"
                 placeholder="Project Inquiry"
                 className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
                 required
               />
             
@@ -189,7 +189,7 @@ export default function Contact() {
               <label
                 htmlFor="message"
                 className="text-xl text-blue-500"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
               >
                 Message
               </label>
@@ -198,7 +198,7 @@ export default function Contact() {
                 id="message"
                 placeholder="Hello, I'd like to talk about..."
                 className="border border-blue-200 text-gray-500 placeholder:text-gray-400   w-full rounded-2xl h-40 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300"
-                style={{ fontFamily: "cursive" }}
+                style={{fontFamily: "Merriweather Sans"}}
                 required
               ></textarea>
 

@@ -11,18 +11,18 @@ import { LuBrain } from "react-icons/lu";
 export default function About() {
     return (
         <>
-            <section className="flex flex-col justify-center items-center text-center px-4 py-6">
+            <section className="flex flex-col justify-center  items-center text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}>
                 <div>
-                    <h2 id="about" className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>About Me</h2>
-                    <p style={{ fontFamily: "cursive" }}>I'm a passionate frontend developer with a strong focus on creating intuitive and engaging user experiences.</p>
+                    <h2 id="about" className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>About Me</h2>
+                    <p style={{fontFamily: "Libre Baskerville"}}>I'm a passionate frontend developer with a strong focus on creating intuitive and engaging user experiences.</p>
                 </div>
 
                 {/* skills/about */}
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     {/* about me */}
                     <div className="text-left md:w-1/2">
-                        <h2 className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>My Story</h2>
-                        <p>I'm <span className="text-blue-700 text-2xl" style={{ fontFamily: "cursive" }} >Inowei David Anagha,</span> a frontend developer with 1 year of experience building web applications.
+                        <h2 className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>My Story</h2>
+                        <p>I'm <span className="text-blue-700 text-2xl" style={{fontFamily: "Libre Baskerville"}} >Inowei David Anagha,</span> a frontend developer with 1 year of experience building web applications.
                             I decided to go into tech cause of a recommendation since then I've a passion for design and problem-solving. 
 
                             I'm constantly learning and adapting to new technologies and methodologies to ensure that I'm delivering the best possible solutions for my clients and users.
@@ -37,14 +37,14 @@ export default function About() {
                     </div>
 
                     {/* Tech stack */}
-                    <div className="text-right flex flex-col justify-center items-end md:w-1/2">
-                        <h2 className="text-4xl text-blue-500 mb-5" style={{ fontFamily: "cursive" }}>Tech Stack</h2>
-                        <div className="flex flex-col justify-center items-center gap-5">
-                            <div className="flex flex-col justify-center items-end gap-2">
+                    <div className="text-right flex flex-col mt-5 justify-center items-center md:w-1/2">
+                        <h2 className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>Tech Stack</h2>
+                        <div className="flex flex-col justify-center items-start gap-5">
+                            <div className="flex flex-col justify-center items-start gap-2">
 
                                 {/* languages */}
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{ fontFamily: "cursive" }}>Languages</h2>
-                                <div className="flex justify-center items-end gap-5">
+                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Languages</h2>
+                                <div className="flex justify-center items-start gap-5">
                                     <p className="flex justify-center items-center gap-2"><FaHtml5 className="text-rose-500" /> HTML</p>
                                     <p className="flex justify-center items-center gap-2"><FaCss3 className="text-blue-500"/> CSS</p>
                                      <p className="flex justify-center items-center gap-2"><IoLogoJavascript className="text-orange-500"/> JavaScript</p>
@@ -52,9 +52,9 @@ export default function About() {
                             </div>
 
                             {/*libraries/frameworks  */}
-                            <div className="flex flex-col justify-center items-end gap-2">
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{ fontFamily: "cursive" }}>Frameworks/Libraries</h2>
-                                <div className="flex justify-center items-end gap-5">
+                            <div className="flex flex-col justify-center items-start gap-2">
+                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Frameworks/Libraries</h2>
+                                <div className="flex justify-center items-start gap-5">
                                     <p className="flex justify-center items-center gap-2"><FaReact className="text-blue-500 animate-spin" /> React</p>
                                     <p className="flex justify-center items-center gap-2"><RiTailwindCssFill className="text-blue-500"/>Tailwind CSS</p>
                                      <p className="flex justify-center items-center gap-2"><FaBootstrap className="text-purple-500"/> Bootstrap</p>
@@ -62,9 +62,9 @@ export default function About() {
                             </div>
 
                             {/* tools */}
-                            <div className="flex flex-col justify-center items-end gap-2">
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{ fontFamily: "cursive" }}>Tools</h2>
-                                <div className="flex justify-center items-end gap-5">
+                            <div className="flex flex-col justify-start items-start gap-2">
+                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Tools</h2>
+                                <div className="flex justify-center items-start gap-5">
                                     <p className="flex justify-center items-center gap-2"><FaFigma className="text-black" /> Figma</p>
                                     <p className="flex justify-center items-center gap-2"><FaNpm className="text-rose-500"/>npm</p>
                                      <p className="flex justify-center items-center gap-2"><SiVite className="text-rose-500"/> Vite</p>
