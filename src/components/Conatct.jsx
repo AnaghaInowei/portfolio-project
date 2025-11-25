@@ -48,16 +48,16 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-center bg-gray-50 gap-6 items-center text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}
+      className="flex flex-col justify-center bg-gray-50 dark:bg-gray-800 gap-6 items-center text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}
     >
       <div className="max-w-2xl">
         <h3
-          className="font-bold text-blue-500 text-2xl mb-4 "
+          className="font-bold text-blue-500 dark:text-blue-400 text-2xl mb-4 "
           style={{fontFamily: "Merriweather Sans"}}
         >
           Conatct Me
         </h3>
-        <p>
+        <p className="text-gray-700 dark:text-gray-300">
           Have a project in mind or just want to say hello? Feel free to reach
           out to me. I'm always open to discussing new projects and
           opportunities.
@@ -70,13 +70,13 @@ export default function Contact() {
           {touch.map((touched) => (
             <div
               key={touched.id}
-              className="flex flex-col gap-3 items-start text-left bg-gray-50 border rounded-xl border-blue-500 px-5 py-2 shadow-xl text-gray-700 hover:shadow-blue-200 hover:-translate-2.5 transition-all duration-300"
+              className="flex flex-col gap-3 items-start text-left bg-gray-50 dark:bg-gray-700 border rounded-xl border-blue-500 dark:border-blue-400 px-5 py-2 shadow-xl text-gray-700 dark:text-gray-300 hover:shadow-blue-200 dark:hover:shadow-blue-900 hover:-translate-2.5 transition-all duration-300"
             >
-              <div className="bg-blue-200 text-blue-500 p-4 rounded-xl">
+              <div className="bg-blue-200 dark:bg-blue-800 text-blue-500 dark:text-blue-300 p-4 rounded-xl">
                 {touched.image}
               </div>
               <h4
-                className="text-xl text-blue-500"
+                className="text-xl text-blue-500 dark:text-blue-400"
                 style={{fontFamily: "Merriweather Sans"}}
               >
                 {touched.title}
@@ -85,9 +85,9 @@ export default function Contact() {
             </div>
           ))}
 
-          <div className="flex flex-col gap-6 justify-center items-start px-6 py-2 border rounded-2xl shadow-xl hover:shadow-blue-400 transition-all duration-300  border-blue-500">
+          <div className="flex flex-col gap-6 justify-center items-start px-6 py-2 border rounded-2xl shadow-xl hover:shadow-blue-400 dark:hover:shadow-blue-900 transition-all duration-300  border-blue-500 dark:border-blue-400 bg-white dark:bg-gray-700">
             <h2
-              className="font-bold text-xl text-blue-500"
+              className="font-bold text-xl text-blue-500 dark:text-blue-400"
               style={{fontFamily: "Merriweather Sans"}}
             >
               Follow me
@@ -95,13 +95,13 @@ export default function Contact() {
             <div className="flex justify-center items-center text-blue-400 text-2xl gap-5">
               <a
                 href="https://www.linkedin.com/in/david-anagha "
-                className=" text-3xl text-blue-500 hover:text-blue-600 transition-colors duration-300"
+                className=" text-3xl text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-300"
               >
                 <FaLinkedin />
               </a>
               <a
                 href="https://www.x.com/InoweiAnagha"
-                className=" text-3xl text-black  transition-colors duration-300"
+                className=" text-3xl text-black dark:text-gray-300 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
               >
                 <FaXTwitter />
               </a>
@@ -112,7 +112,7 @@ export default function Contact() {
         {/* contacts section 🥱🥱 */}
         <div className="flex flex-col justify-between w-full   items-center">
           <h3
-            className="font-bold text-xl text-blue-500"
+            className="font-bold text-xl text-blue-500 dark:text-blue-400"
             style={{fontFamily: "Merriweather Sans"}}
           >
             Send me a message
@@ -128,7 +128,7 @@ export default function Contact() {
               {/* label for name */}
               <label
                 htmlFor="yourname"
-                className="items-start text-xl text-blue-500"
+                className="items-start text-xl text-blue-500 dark:text-blue-400"
                 style={{fontFamily: "Merriweather Sans"}}
               >
                 Your Name
@@ -138,7 +138,7 @@ export default function Contact() {
                 name="yourname"
                 id="yourname"
                 placeholder="John Doe"
-                className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
+                className="border border-blue-200 dark:border-blue-600 text-gray-500 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 bg-white dark:bg-gray-700 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 dark:focus:border-blue-500 focus:outline focus:outline-blue-700 dark:focus:outline-blue-500  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
                 style={{fontFamily: "Merriweather Sans"}}
                 required
               />
@@ -148,7 +148,7 @@ export default function Contact() {
             
               <label
                 htmlFor="email"
-                className="text-xl text-blue-500"
+                className="text-xl text-blue-500 dark:text-blue-400"
                 style={{fontFamily: "Merriweather Sans"}}
               >
                 Email
@@ -158,7 +158,7 @@ export default function Contact() {
                 name="email"
                 id="email"
                 placeholder="johndoe@gmail.com"
-                className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
+                className="border border-blue-200 dark:border-blue-600 text-gray-500 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 bg-white dark:bg-gray-700 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 dark:focus:border-blue-500 focus:outline focus:outline-blue-700 dark:focus:outline-blue-500  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
                 style={{fontFamily: "Merriweather Sans"}}
                 required
               />
@@ -168,7 +168,7 @@ export default function Contact() {
             
               <label
                 htmlFor="subject"
-                className="text-xl text-blue-500"
+                className="text-xl text-blue-500 dark:text-blue-400"
                 style={{fontFamily: "Merriweather Sans"}}
               >
                 Subject
@@ -178,7 +178,7 @@ export default function Contact() {
                 name="subject"
                 id="subject"
                 placeholder="Project Inquiry"
-                className="border border-blue-200 text-gray-500 placeholder:text-gray-400 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
+                className="border border-blue-200 dark:border-blue-600 text-gray-500 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 bg-white dark:bg-gray-700 rounded-2xl h-10 px-3 py-5  focus:border-blue-700 dark:focus:border-blue-500 focus:outline focus:outline-blue-700 dark:focus:outline-blue-500  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300   w-full"
                 style={{fontFamily: "Merriweather Sans"}}
                 required
               />
@@ -188,7 +188,7 @@ export default function Contact() {
             
               <label
                 htmlFor="message"
-                className="text-xl text-blue-500"
+                className="text-xl text-blue-500 dark:text-blue-400"
                 style={{fontFamily: "Merriweather Sans"}}
               >
                 Message
@@ -197,7 +197,7 @@ export default function Contact() {
                 name="message"
                 id="message"
                 placeholder="Hello, I'd like to talk about..."
-                className="border border-blue-200 text-gray-500 placeholder:text-gray-400   w-full rounded-2xl h-40 px-3 py-5  focus:border-blue-700 focus:outline focus:outline-blue-700  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300"
+                className="border border-blue-200 dark:border-blue-600 text-gray-500 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 bg-white dark:bg-gray-700   w-full rounded-2xl h-40 px-3 py-5  focus:border-blue-700 dark:focus:border-blue-500 focus:outline focus:outline-blue-700 dark:focus:outline-blue-500  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 transition-all duration-300"
                 style={{fontFamily: "Merriweather Sans"}}
                 required
               ></textarea>
@@ -214,14 +214,14 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="flex justify-center items-center bg-blue-600 rounded-2xl shadow-xl hover:shadow-blue-500 hover:-translate-1.5 hover:bg-blue-700 transition-all duration-300 text-white gap-3 px-6 py-2"
+                className="flex justify-center items-center bg-blue-600 dark:bg-blue-700 rounded-2xl shadow-xl hover:shadow-blue-500 dark:hover:shadow-blue-700 hover:-translate-1.5 hover:bg-blue-700 dark:hover:bg-blue-800 transition-all duration-300 text-white gap-3 px-6 py-2"
               >
                 <FiSend /> Submit
               </button>
           </form>
 
           {showSuccess && (
-            <p className="text-green-600 font-semibold mt-4">
+            <p className="text-green-600 dark:text-green-400 font-semibold mt-4">
               Thanks for reaching out! I&apos;ll get back to you shortly.
             </p>
           )}

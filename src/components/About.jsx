@@ -11,63 +11,63 @@ import { LuBrain } from "react-icons/lu";
 export default function About() {
     return (
         <>
-            <section className="flex flex-col justify-center  items-center text-center px-4 py-6" style={{fontFamily: "Merriweather Sans"}}>
+            <section className="flex flex-col justify-center  items-center text-center px-4 py-6 bg-white dark:bg-gray-800" style={{fontFamily: "Merriweather Sans"}}>
                 <div>
-                    <h2 id="about" className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>About Me</h2>
-                    <p style={{fontFamily: "Libre Baskerville"}}>I'm a passionate frontend developer with a strong focus on creating intuitive and engaging user experiences.</p>
+                    <h2 id="about" className="text-4xl text-blue-500 dark:text-blue-400 mb-5" style={{fontFamily: "Libre Baskerville"}}>About Me</h2>
+                    <p className="text-gray-700 dark:text-gray-300" style={{fontFamily: "Libre Baskerville"}}>I'm a passionate frontend developer with a strong focus on creating intuitive and engaging user experiences.</p>
                 </div>
 
                 {/* skills/about */}
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     {/* about me */}
                     <div className="text-left md:w-1/2">
-                        <h2 className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>My Story</h2>
-                        <p>I'm <span className="text-blue-700 text-2xl" style={{fontFamily: "Libre Baskerville"}} >Inowei David Anagha,</span> a frontend developer with 1 year of experience building web applications.
+                        <h2 className="text-4xl text-blue-500 dark:text-blue-400 mb-5" style={{fontFamily: "Libre Baskerville"}}>My Story</h2>
+                        <p className="text-gray-700 dark:text-gray-300">I'm <span className="text-blue-700 dark:text-blue-400 text-2xl" style={{fontFamily: "Libre Baskerville"}} >Inowei David Anagha,</span> a frontend developer with 1 year of experience building web applications.
                             I decided to go into tech cause of a recommendation since then I've a passion for design and problem-solving. 
 
                             I'm constantly learning and adapting to new technologies and methodologies to ensure that I'm delivering the best possible solutions for my clients and users.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-2">
-                            <p className="flex  items-center gap-2"><IoCode className="text-blue-700 text-2xl hover:animate-spin"/> Clean Code</p>
-                            <p className="flex  items-center gap-2"><TbTableColumn className="text-blue-700 text-2xl hover:animate-ping"/>Responsive Design</p>
-                            <p className="flex  items-center gap-2"><IoIosGlobe className="text-blue-700 text-2xl hover:animate-bounce"/>Web Performance</p>
-                            <p className="flex  items-center gap-2"><LuBrain className="text-blue-700 text-2xl hover:animate-pulse"/>Problem Solver</p>
+                            <p className="flex  items-center gap-2 text-gray-700 dark:text-gray-300"><IoCode className="text-blue-700 dark:text-blue-400 text-2xl hover:animate-spin"/> Clean Code</p>
+                            <p className="flex  items-center gap-2 text-gray-700 dark:text-gray-300"><TbTableColumn className="text-blue-700 dark:text-blue-400 text-2xl hover:animate-ping"/>Responsive Design</p>
+                            <p className="flex  items-center gap-2 text-gray-700 dark:text-gray-300"><IoIosGlobe className="text-blue-700 dark:text-blue-400 text-2xl hover:animate-bounce"/>Web Performance</p>
+                            <p className="flex  items-center gap-2 text-gray-700 dark:text-gray-300"><LuBrain className="text-blue-700 dark:text-blue-400 text-2xl hover:animate-pulse"/>Problem Solver</p>
                         </div>
                     
                     </div>
 
                     {/* Tech stack */}
                     <div className="text-right flex flex-col mt-5 justify-center items-center md:w-1/2">
-                        <h2 className="text-4xl text-blue-500 mb-5" style={{fontFamily: "Libre Baskerville"}}>Tech Stack</h2>
+                        <h2 className="text-4xl text-blue-500 dark:text-blue-400 mb-5" style={{fontFamily: "Libre Baskerville"}}>Tech Stack</h2>
                         <div className="flex flex-col justify-center items-start gap-5">
                             <div className="flex flex-col justify-center items-start gap-2">
 
                                 {/* languages */}
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Languages</h2>
+                                <h2 className="text-2xl text-blue-500 dark:text-blue-400 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Languages</h2>
                                 <div className="flex justify-center items-start gap-5">
-                                    <p className="flex justify-center items-center gap-2"><FaHtml5 className="text-rose-500" /> HTML</p>
-                                    <p className="flex justify-center items-center gap-2"><FaCss3 className="text-blue-500"/> CSS</p>
-                                     <p className="flex justify-center items-center gap-2"><IoLogoJavascript className="text-orange-500"/> JavaScript</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaHtml5 className="text-rose-500" /> HTML</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaCss3 className="text-blue-500"/> CSS</p>
+                                     <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><IoLogoJavascript className="text-orange-500"/> JavaScript</p>
                                 </div>
                             </div>
 
                             {/*libraries/frameworks  */}
                             <div className="flex flex-col justify-center items-start gap-2">
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Frameworks/Libraries</h2>
+                                <h2 className="text-2xl text-blue-500 dark:text-blue-400 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Frameworks/Libraries</h2>
                                 <div className="flex justify-center items-start gap-5">
-                                    <p className="flex justify-center items-center gap-2"><FaReact className="text-blue-500 animate-spin" /> React</p>
-                                    <p className="flex justify-center items-center gap-2"><RiTailwindCssFill className="text-blue-500"/>Tailwind CSS</p>
-                                     <p className="flex justify-center items-center gap-2"><FaBootstrap className="text-purple-500"/> Bootstrap</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaReact className="text-blue-500 animate-spin" /> React</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><RiTailwindCssFill className="text-blue-500"/>Tailwind CSS</p>
+                                     <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaBootstrap className="text-purple-500"/> Bootstrap</p>
                                 </div>
                             </div>
 
                             {/* tools */}
                             <div className="flex flex-col justify-start items-start gap-2">
-                                <h2 className="text-2xl text-blue-500 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Tools</h2>
+                                <h2 className="text-2xl text-blue-500 dark:text-blue-400 mb-5 " style={{fontFamily: "Libre Baskerville"}}>Tools</h2>
                                 <div className="flex justify-center items-start gap-5">
-                                    <p className="flex justify-center items-center gap-2"><FaFigma className="text-black" /> Figma</p>
-                                    <p className="flex justify-center items-center gap-2"><FaNpm className="text-rose-500"/>npm</p>
-                                     <p className="flex justify-center items-center gap-2"><SiVite className="text-rose-500"/> Vite</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaFigma className="text-black dark:text-gray-300" /> Figma</p>
+                                    <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><FaNpm className="text-rose-500"/>npm</p>
+                                     <p className="flex justify-center items-center gap-2 text-gray-700 dark:text-gray-300"><SiVite className="text-rose-500"/> Vite</p>
                                 </div>
                             </div>
 

@@ -15,9 +15,23 @@ export const DarkModeProvider = ({ children }) => {
     // Check localStorage or system preference
     const saved = localStorage.getItem('darkMode');
     if (saved !== null) {
-      return JSON.parse(saved);
+      const isDark = JSON.parse(saved);
+      // Apply class immediately
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      return isDark;
     }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Apply class immediately
+    if (prefersDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    return prefersDark;
   });
 
   useEffect(() => {

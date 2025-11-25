@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <section className="bg-gray-900 text-gray-100 " style={{fontFamily: "Merriweather Sans"}}>
+    <section className="bg-gray-900 dark:bg-gray-950 text-gray-100 " style={{fontFamily: "Merriweather Sans"}}>
       <div className="grid grid-cols-1 md:grid-cols-3  justify-between px-3 py-6  gap-3">
         {/* Quick Links */}
         <div>
