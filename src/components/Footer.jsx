@@ -10,10 +10,10 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <section className="bg-gray-900 dark:bg-gray-950 text-gray-100 " style={{fontFamily: "Merriweather Sans"}}>
-      <div className="grid grid-cols-1 md:grid-cols-3  justify-between px-3 py-6  gap-3">
+    <section className="bg-gray-900 dark:bg-gray-950 text-gray-100 flex flex-col justify-center items-center " style={{fontFamily: "Merriweather Sans"}}>
+      <div className="grid grid-cols-1 md:grid-cols-3  justify-center items-center px-3 py-6  gap-3">
         {/* Quick Links */}
-        <div>
+        <div className="flex flex-col gap-2 flex-1">
           <h2 className="flex items-center gap-2font-bold text-gray-50 text-2xl mb-4" style={{fontFamily: "Libre Baskerville"}}>
             <FaCode className="text-blue-500 hover:animate-spin cursor-pointer" />
             Inowei
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="flex flex-col gap-2 flex-1">
           <h2 className="font-bold text-blue-500 text-2xl mb-4 " style={{fontFamily: "Libre Baskerville"}}>Quick Links</h2>
           <div className="flex flex-col justify-start gap-3">
             <a className="hover:text-blue-400" href="#hero">Home</a>
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col gap-2 flex-1">
           <h2 className="font-bold text-blue-500 text-2xl mb-4 " style={{fontFamily: "Libre Baskerville"}}>Contact Info</h2>
           <div className="flex flex-col gap-2 justify-start">
             <p className="flex justify-start items-center hover:text-blue-500 transition-all duration-300 text-white gap-3">

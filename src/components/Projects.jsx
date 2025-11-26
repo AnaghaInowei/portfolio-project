@@ -12,8 +12,8 @@ const projects = [
         image: udemelity,
         description: "A website for an Electrical Service company",
         technologies: ["tailwind css", "HTML"],
-        githubUrl: "https://github.com/...",
-        liveUrl: "https://live-demo.com/..."
+        githubUrl: "https://github.com/AnaghaInowei/Udemelity",
+        liveUrl: "https://udemility-site.vercel.app/"
     },
     {
         id:2,
