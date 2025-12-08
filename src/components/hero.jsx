@@ -1,8 +1,9 @@
 import React from 'react';
-import profileImage from '../assets/inowei.png'
+// profile image replaced by Spline 3D scene
 import { FaLinkedin, FaGithub} from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
+import Spline from "./Spline"
 
 export default function Hero() {
   return (
@@ -29,9 +30,9 @@ export default function Hero() {
 
       {/* Profile Image */}
       </div>
-      <div className=" mt-10 md:mt-0 mx-0  max-w-50 max-h-50 md:max-w-100 md:max-h-100  rounded-full transition-all duration-300 animate-slide-in-right">
-        <img src={profileImage} alt="Inowei" className=" rounded-full shadow-lg object-cover w-50 h-50 md:w-100 md:h-100 border-2 border-blue-500 dark:border-blue-400" />
-      </div>
+      
+        <Spline />
+      
       <div className="flex flex-col gap-2 justify-center items-center md:absolute  bottom-2 left-1/2 transform -translate-x-1/2  transition-all duration-300">
       <p className="text-gray-600 dark:text-gray-400 transition-all duration-300 animate-slide-in-left">Scroll down</p>
         <FaArrowDown className="text-blue-500 dark:text-blue-400 text-2xl animate-bounce" />
