@@ -1,7 +1,11 @@
 import React from 'react'
 import udemelity from '../assets/udemelity.png'
 import RentDirect from '../assets/rent-direct.png'
+import Buildco from '../assets/build-co.png'
+import CleanPro from '../assets/clean-pro.png'
+
 import { FaExternalLinkAlt, FaGithub} from 'react-icons/fa'
+import { ImPen } from 'react-icons/im'
 
 
 const ProjectsSection = () => {
@@ -10,8 +14,8 @@ const projects = [
         id:1,
         title: "Udemelity Electrical Service",
         image: udemelity,
-        description: "A website for an Electrical Service company",
-        technologies: ["tailwind css", "HTML"],
+        description: "Udemelity Electrical Service is an electrical service company that provides reliable electrical services for commercial, industrial and domestic buildings",
+        technologies: ["Tailwind CSS", "HTML"],
         githubUrl: "https://github.com/AnaghaInowei/Udemelity",
         liveUrl: "https://udemility-site.vercel.app/"
     },
@@ -23,6 +27,22 @@ const projects = [
         technologies: ["JavaScript", "CSS", "HTML"],
         githubUrl: "https://github.com/AnaghaInowei/Rent-Direct",
         liveUrl: "https://rent-direct-techyjaunt.vercel.app/"
+    },
+    {
+        id:3,
+        title: "Build Co Construction",
+        image: Buildco,
+        description: "Build Co is a startup construction company that deals in the construction of beautiful and long lasting structures that stand the test of time.",
+        technologies: ["React", "Tailwind CSS", "TypeScript"],
+        liveUrl: "https://project-construction-startup-website-503.magicpatterns.app"
+    },
+    {
+        id:4,
+        title: "Clean Pro",
+        image: CleanPro,
+        description: "Clean Pro is a cleaning company that offers commercial, industrial and domestics cleaning as well as post-contruction cleaning.",
+        technologies: ["React", "Tailwind CSS", "TypeScript"],
+        liveUrl: "https://project-cleaning-service-website-template-960.magicpatterns.app/"
     }
 ];
 
@@ -43,6 +63,7 @@ const projects = [
                     <img 
                       src={project.image} 
                       alt={project.title}
+                      loading='lazy'
                       className="w-full h-64 object-cover"
                     />
                   </div>
